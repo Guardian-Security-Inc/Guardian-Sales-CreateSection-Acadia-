@@ -15,8 +15,6 @@ public class UpdateSectionsPlugin : IPlugin
        
         ITracingService tracingService = (ITracingService)serviceProvider.GetService(typeof(ITracingService));
         tracingService.Trace("Begin Plugin Execution");
-
-       
         IPluginExecutionContext context = (IPluginExecutionContext)serviceProvider.GetService(typeof(IPluginExecutionContext));
 
         
